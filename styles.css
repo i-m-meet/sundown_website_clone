@@ -22,7 +22,7 @@ html, body{
 }
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: var(--primary-color);
     position: relative;
@@ -110,3 +110,69 @@ nav{
     font-size: 8vw;
     line-height: 8vw;
 }
+
+#page1 video{
+    width: 100%;
+   border-radius: 30px;
+   margin-top: 4vw;
+   position: relative;
+}
+
+/* hero-shape */
+
+.hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: 0;
+    top: 68vh;
+    
+}
+
+.hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; 
+    filter: blur(50px);
+    position: absolute;
+}
+
+.hero-2{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320a, #fe330aed);
+    border-radius: 50%; 
+    filter: blur(25px);
+    position: absolute;
+    animation: animateHero-2 5s infinite alternate linear;
+}
+
+.hero-3{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320a, #fe330aed);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation: animateHero-1 3s infinite alternate linear;
+}
+
+@keyframes animateHero-1{
+ from{
+     transform: translate(50%, -10%);
+ }
+ to {
+     transform: translate(0%,10%);
+ }
+}
+
+@keyframes animateHero-2{
+    from{
+        transform: translate(5%, -5%);
+    }
+    to {
+        transform: translate(-20%,20%);
+    }
+   }

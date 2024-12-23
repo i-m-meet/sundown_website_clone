@@ -26,6 +26,7 @@ html, body{
     width: 100%;
     background-color: var(--primary-color);
     position: relative;
+    padding : 0 2vw;
 }
 
 nav{
@@ -35,7 +36,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 2vw;
+    padding: 2vw 0;
 }
 
 .nav-links{
@@ -83,4 +84,29 @@ nav{
     bottom: 0;
     border-radius: 0;
 
+}
+
+/* Center */
+.center {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2vw;
+}
+
+.left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+.right h1{
+    text-align: right;
+    width: 30vw;
+    font-size: 8vw;
+    line-height: 8vw;
 }

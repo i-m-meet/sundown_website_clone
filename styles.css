@@ -7,7 +7,7 @@
 
 :root{
     --primary-color: #EFEAE3;
-    --secondary-color: #FF9800;
+    --secondary-color: #FE320A;
     --tertiary-color: #FF5722;
     --dark-color: #333;
     --light-color: #f4f4f4;
@@ -142,7 +142,7 @@ nav{
 .hero-2{
     height: 30vw;
     width: 30vw;
-    background: linear-gradient(#FE320a, #fe330aed);
+    background: linear-gradient(#FE320A, #fe330aed);
     border-radius: 50%; 
     filter: blur(25px);
     position: absolute;
@@ -152,7 +152,7 @@ nav{
 .hero-3{
     height: 30vw;
     width: 30vw;
-    background: linear-gradient(#FE320a, #fe330aed);
+    background: linear-gradient(#FE320A, #fe330aed);
     border-radius: 50%;
     filter: blur(25px);
     position: absolute;
@@ -176,3 +176,50 @@ nav{
         transform: translate(-20%,20%);
     }
    }
+
+/* Page 2 */
+#page2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    padding: 8vw 8vw;
+}
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;  
+    scrollbar-width: none; 
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    display: inline-block;
+  white-space: nowrap;
+  animation: slide 10s infinite linear;
+}
+
+.moving-text h1{
+    font-size: 8vw;
+    display: inline-block;
+}
+
+
+.dot{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    align-items: center;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

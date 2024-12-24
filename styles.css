@@ -182,7 +182,7 @@ nav{
     width: 100%;
     min-height: 100vh;
     background-color: var(--primary-color);
-    padding: 8vw 8vw;
+    padding: 8vw 0 8vw 0;
 }
 .moving-text{
     white-space: nowrap;
@@ -206,8 +206,8 @@ nav{
 
 
 .dot{
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: var(--secondary-color);
     align-items: center;
@@ -222,4 +222,116 @@ nav{
     to{
         transform: translateX(-100%);
     }
+}
+
+.page2-bottom{
+    width: 100%;
+    display: flex;
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 0 3vw;
+}
+
+.one{
+    width: 70vw;
+    height: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.one h2{
+    font-size: 4vw;
+    margin-top: 8vw ;
+    margin-left: 4vw;
+    padding:3vw;
+    z-index: 10;
+}
+
+.foot-text{
+    display: flex;
+    gap: 2vw;  
+    
+}
+
+.dot-small{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.two{
+    width: 30vw;
+    height: 50vw;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.two-content{
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+}
+
+.two-content img{
+    width: 20vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 7vw;
+}
+
+.two-content p{
+    font-size: 1rem;
+    margin-top: 2vw;
+    width: 20vw;
+}
+
+
+.shape{
+    position: absolute;
+    width: 35vw;
+    height: 35vw;  
+    top: 25vh;
+    margin-left: 30vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.shape1{
+    width: 100%;
+    height: 100%;
+    background-color: #FF5722;
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+}
+
+.shape2{
+    width : 80%;
+    height: 80%;
+    background-color: #FE320A;
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation: animateShape-2 3s infinite alternate linear;
+}
+
+@keyframes animateShape-2{
+    from{
+        transform: translate(10%, -5%);
+    }
+    to {
+        transform: translate(-5%,10%);
+    }
+    
 }

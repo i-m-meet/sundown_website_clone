@@ -335,3 +335,72 @@ nav{
     }
     
 }
+
+/* responsive */
+
+@media(max-width: 1068px){
+.center{
+    height: 30vh;
+    flex-direction: column-reverse;
+    gap: 2vw;
+    padding: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+.left h3{
+    width: 100%;
+    height: fit-content;
+    text-wrap: wrap;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+.dot{
+    width: 50px;
+    height: 50px;
+}
+
+.page2-bottom{
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+.one{
+    width: 100%;
+    height: 100%;
+}
+
+.one h2{
+    font-size: 3vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+    padding: 2vw;
+    width: 50%;
+}
+
+.foot-text{
+    margin-top: 5vw; ;
+} 
+
+.two{
+    justify-content: center;
+    margin-right: 12vw;
+}
+
+.shape{
+    width: 30vw;
+    height: 30vw;
+    top: 10vh;
+    margin-left: 20vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+}
+
+
+@media(max-width: 768px){
+    .nav-links{
+        display: none;
+    }
+}
